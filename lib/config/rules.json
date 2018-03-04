@@ -1,0 +1,88 @@
+{
+  "img": {
+    "tag": "img",
+    "conditions": [
+      {
+        "attribute": {
+          "assertion": "to.have.property",
+          "assertValue": "alt"
+        },
+        "defectMessage": "This HTML has %d <img> tag without alt attribute"
+      }
+    ]
+  },
+  "a": {
+    "tag": "a",
+    "conditions": [
+      {
+        "attribute": {
+          "assertion": "to.have.property",
+          "assertValue": "rel"
+        },
+        "defectMessage": "This HTML has %d <a> tag without rel attribute"
+      }
+    ]
+  },
+  "head": {
+    "tag": "head",
+    "conditions": [
+      {
+        "children": {
+          "assertion": "to.containSubset",
+          "assertValue": [{
+            "name": "title"
+          }]
+        },
+        "defectMessage": "This HTML has <head> tag without <title> tag"
+      },
+      {
+        "children": {
+          "assertion": "to.containSubset",
+          "assertValue": [{
+            "name": "meta",
+            "attribs": {
+              "name": "description"
+            }
+          }]
+        },
+        "defectMessage": "This HTML has <head> tag without <meta name='descriptions'/> tag"
+      },
+      {
+        "children": {
+          "assertion": "to.containSubset",
+          "assertValue": [{
+            "name": "meta",
+            "attribs": {
+              "name": "keywords"
+            }
+          }]
+        },
+        "defectMessage": "This HTML has <head> tag without <meta name='keywords'/> tag"
+      }
+    ]
+  },
+  "strong": {
+    "tag": "strong",
+    "conditions": [
+      {
+        "itself": {
+          "assertion": "length.to.be.below",
+          "assertValue": 16
+        },
+        "defectMessage": "This HTML has more than 15 <strong> tag"
+      }
+    ]
+  },
+  "h1": {
+    "tag": "h1",
+    "conditions": [
+      {
+        "itself": {
+          "assertion": "length.to.be.below",
+          "assertValue": 2
+        },
+        "defectMessage": "This HTML has more than one <h1> tag"
+      }
+    ]
+  }
+}

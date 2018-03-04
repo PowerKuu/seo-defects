@@ -1,0 +1,45 @@
+{
+  "name": "@quanglight/seo-defects",
+  "version": "1.0.2",
+  "description": "A Node.js module to scan a HTML input and output all of the SEO defects",
+  "main": "./lib/detector.js",
+  "scripts": {
+    "test": "nyc mocha",
+    "example": "node ./lib/example/example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dangquanglight/seo-defects.git"
+  },
+  "keywords": [
+    "SEO",
+    "defects",
+    "validator",
+    "detector",
+    "HTML",
+    "check",
+    "rules"
+  ],
+  "author": "Quang Le Dang <dangquang.light@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dangquanglight/seo-defects/issues"
+  },
+  "homepage": "https://github.com/dangquanglight/seo-defects#readme",
+  "engines": {
+    "node": ">= 8.0"
+  },
+  "dependencies": {
+    "assumejs": "^0.2.3",
+    "chai": "^4.1.2",
+    "chai-subset": "^1.6.0",
+    "cheerio": "^1.0.0-rc.2",
+    "filepath": "^1.1.0",
+    "htmlparser": "^1.7.7",
+    "sprintf-js": "^1.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1",
+    "nyc": "^11.4.1"
+  }
+}

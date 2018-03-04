@@ -1,0 +1,31 @@
+{
+  "custom": {
+    "tag": "head",
+    "conditions": [
+      {
+        "children": {
+          "assertion": "to.containSubset",
+          "assertValue": [{
+            "name": "meta",
+            "attribs": {
+              "name": "robots"
+            }
+          }]
+        },
+        "defectMessage": "This HTML has <head> tag without <meta name='robots'/> tag"
+      }
+    ]
+  },
+  "strong": {
+    "tag": "strong",
+    "conditions": [
+      {
+        "itself": {
+          "assertion": "length.to.be.below",
+          "assertValue": 6
+        },
+        "defectMessage": "This HTML has more than 5 <strong> tag"
+      }
+    ]
+  }
+}
