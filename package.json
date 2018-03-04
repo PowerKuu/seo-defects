@@ -1,6 +1,6 @@
 {
   "name": "@quanglight/seo-defects",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Node.js module to scan a HTML input and output all of the SEO defects",
   "main": "./lib/detector.js",
   "scripts": {
