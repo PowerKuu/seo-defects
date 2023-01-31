@@ -30,7 +30,7 @@
     "node": ">= 8.0"
   },
   "dependencies": {
-    "assumejs": "^0.2.3",
+    "assumejs": "latest",
     "chai": "^4.1.2",
     "chai-subset": "^1.6.0",
     "cheerio": "^1.0.0-rc.2",
