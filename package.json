@@ -1,6 +1,6 @@
 {
   "name": "@klevn/seo-defects",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "A Node.js module to scan a HTML input and output all of the SEO defects",
   "main": "./lib/detector.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "node": ">= 8.0"
   },
   "dependencies": {
-    "assumejs": "latest",
+    "@klevn/assumejs": "latest",
     "chai": "^4.1.2",
     "chai-subset": "^1.6.0",
     "cheerio": "^1.0.0-rc.2",
